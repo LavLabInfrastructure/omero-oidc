@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="server.unit" time-out="5000">
+  
+  <test name="server.unit.active">
+    <groups>
+      <run>
+        <exclude name="broken"/>
+        <exclude name="ignore"/>
+        <exclude name="integration"/>
+        <exclude name="ldap"/>
+      </run>
+    </groups>
+    <packages>
+      <package name="ome.formats.*"/>
+      
+      <package name="ome.server.*"/>
+      
+      <package name="ome.services.*"/>
+      
+      <package name="omeis.*"/>
+
+    </packages>
+  </test>
+
+</suite>

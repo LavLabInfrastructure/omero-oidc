@@ -1,0 +1,26 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava
+> Task :processTestResources UP-TO-DATE
+> Task :testClasses
+
+> Task :test
+
+server.unit > server.unit.active > ome.server.utests.sec.IOidcTestReadOnly STANDARD_OUT
+    17:28:47,637 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+    17:28:47,637 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/home/mjbarrett/.gradle/caches/modules-2/files-2.1/no.nav.security/mock-oauth2-server/0.5.6/18bc863fb983df3a2d5bde6ec4393240efb42974/mock-oauth2-server-0.5.6.jar!/logback.xml]
+    17:28:47,647 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@20011bf - URL [jar:file:/home/mjbarrett/.gradle/caches/modules-2/files-2.1/no.nav.security/mock-oauth2-server/0.5.6/18bc863fb983df3a2d5bde6ec4393240efb42974/mock-oauth2-server-0.5.6.jar!/logback.xml] is not of type file
+    17:28:47,671 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+    17:28:47,671 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+    17:28:47,676 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [stdout]
+    17:28:47,716 |-WARN in ch.qos.logback.core.ConsoleAppender[stdout] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+    17:28:47,716 |-WARN in ch.qos.logback.core.ConsoleAppender[stdout] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+    17:28:47,716 |-WARN in ch.qos.logback.core.ConsoleAppender[stdout] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+    17:28:47,717 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [io.netty] to INFO
+    17:28:47,718 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+    17:28:47,718 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [stdout] to Logger[ROOT]
+    17:28:47,718 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+    17:28:47,719 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@51d9b06c - Registering current configuration as safe fallback point
+
+    org.springframework.security.oauth2.client.OAuth2AuthorizedClient@1578b8ec

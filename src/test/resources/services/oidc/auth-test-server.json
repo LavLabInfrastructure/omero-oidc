@@ -1,0 +1,30 @@
+{
+    "httpServer": {
+        "type" : "MockWebServerWrapper"
+    },
+    "tokenProvider" : {
+        "keyProvider" : {
+          "algorithm" : "ES256"
+        }
+    },
+    "tokenCallbacks": [
+        {
+            "tokenExpiry": 120,
+            "issuerId": "read-only",
+            "requestMappings": [
+                {
+                    "requestParam": "scope",
+                    "match": "scope",
+                    "claims": {
+                        "sub": "sub",
+                        "aud": [
+                            "default"
+                        ],
+                        "preferred_username":"username"
+                    }
+                }
+            ]
+        }
+    ]
+    
+} 
